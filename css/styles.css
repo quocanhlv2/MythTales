@@ -1,0 +1,623 @@
+@font-face {
+    font-family: 'myth_tales';
+    src: url('/resources/fuente/MythTalesFont.ttf')
+    font-style: normal;
+
+}
+* {
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+}
+dl, ol, ul {
+    margin-top:0;
+    margin-bottom: 0;
+}
+figure{
+    margin:0;
+}
+p{
+    margin-bottom: 0;
+}
+html, body {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Cormorant Garamond';
+    font-size: 22px;
+    width: 100%;
+    overflow-x:hidden;
+}
+
+h1 {
+    font-family: 'myth_tales'
+    font-size: 3em;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    color:rgb(219,153,66);
+}
+
+h2 {
+    font-size: 1em;
+    margin: 0.75em 0;
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    color:rgb(238,238,238);
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+    display: block;
+}
+/*    white rgb(238,238,238)
+    yellow rgb(219,153,66)*/
+
+/* MAQUETACIÓN DEL PORFOLIO */
+
+#menu{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgb(22,13,9);
+    z-index:1;
+    display:flex;
+    padding: 0;
+    margin: 0;
+    font-size: 0.85em; 
+}
+#menu > figure{
+    margin: 0.2em;
+    padding 0.2em;
+    width: 67px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#menu > .mainMenu{
+    width: 85%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#menu > .JugarHeader{   
+    width: 15%;
+    margin: 0;
+    padding:0;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: rgb(219,153,66);
+}
+
+#menu > ul > li{
+    list-style: none;
+    text-align: center;
+    padding: 0.5em 1.5em;
+}
+
+#menu .openMenu, .closeMenu{
+    display: none;
+    align-items: center;
+    cursor: pointer;
+}
+
+#menu > ul > li > a {
+    color: rgb(238,238,238);
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu > ul > li:hover{
+    height: auto;
+    background-color: rgb(219,153,66);
+    color: white;
+}
+
+
+
+/*Descubre*/
+#descubre{
+    padding:0em 0;
+    background-image: url('../resources/bg/FondoImagenPrincipal.PNG');
+    background-color: rgb(22,13,9);
+    width: 100%;
+}
+
+#descubre > .logoMT{
+    padding: 10em 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 18em;
+    width: auto;
+}
+#descubre > .NavArrow > a{
+    padding-top: 0;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    width: auto;
+    height: 2em;
+    padding-bottom: 5em;
+}
+
+
+
+#MythTales{
+    width: 100%;
+    padding: 7em 0;
+    background-color: rgb(22,13,9);
+}
+
+#MythTales > h1{
+    width: 50%;
+}
+
+#MythTales > div {
+        display:flex;
+}
+
+#MythTales >div> .text{
+    margin-top: 3em;
+    width: 50%;
+}
+#MythTales >div > .img{
+    width: 50%;
+    justify-content:center;
+}
+
+#MythTales > div > div > p{
+    color: #eeeeee;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+
+
+
+/*Historia*/
+
+#historia{
+     width: 100%;
+    padding:8em 0;
+    background-color: rgb(22,13,9);
+}
+#historia > h1{
+    width: 50%;
+}
+
+#historia > div{
+    display: flex;
+    width: 100%;
+}
+
+#historia > div > .text{
+    margin-top: 3em;
+    width: 50%;
+}
+#historia > div> .img{
+    width: 50%;
+    justify-content:center;
+}
+
+#historia > div > div > p{
+    color: #eeeeee;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+
+
+
+/*Personajes*/
+#personajes {
+     width: 100%;
+    padding:5em 0;
+    background-color: rgb(22,13,9);
+}
+
+#personajes > h1{
+      width: 50%;
+}
+#personajes > div{
+    display: flex;
+    width: 100%;
+}
+#personajes > div > .text{
+    margin-top: 3em;
+    width: 50%;
+}
+#personajes > div > .img{
+    width: 50%;
+    transform: scale(0.75);
+    justify-content:center;
+}
+
+#personajes > div > div > p{
+    color: #eeeeee;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+/*Contacto*/
+#contacto{
+    width: 100%;
+    background-color: rgb(22,13,9);
+    padding: 8em 0em;
+}
+#contacto > div{
+    padding: 5em;
+}
+#contacto > div > h1{
+    width: 50%;
+    padding-bottom: 1em;
+}
+#contacto > div > div{
+    margin: 0;
+    display:flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.form-control{
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgb(238,238,238);
+    background-color: rgb(238,238,238);
+    background-clip: padding-box;
+    border: 0.125rem solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.5rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+input[name="contact-form"] {
+    width: 100%;
+  }
+.row{
+    width: 60%;
+}
+.container2{
+    width: 40%;
+}
+.container2 > img {
+    justify-content: center;
+    align-items: center;
+    display:flex;
+}
+.container3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container3 > h2{
+    width: 70%;
+    font-size: 1.75em;
+}
+.container3 > a {
+    width: 30%;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+    height: auto;
+    padding-right: 0.5em;
+    color: rgb(238,238,238);
+}
+.container3 > a > i{
+    font-size: 2em;
+}
+    
+#jugar{
+    height: 100vh;
+     width: 100%;
+    background-image: url('../resources/bg/FondoImagenPrincipal.PNG');
+    display: grid;
+}
+
+#jugar > a{
+    padding: 0.45em 1.25em;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 2em;
+    margin: auto;
+    background-color: rgb(22,13,9);
+    color:rgb(238,238,238);
+    text-decoration: none;
+}
+#jugar > a:hover{
+    background-color: rgb(219,153,66);
+}
+
+/*Footer*/
+footer {
+    background-color: rgb(219,153,66);
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+footer > figure > img{
+    width: 64px;   
+}
+footer > figure{
+     margin: 0.25em;
+}
+
+footer > .content1{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: rgb(238,238,238);
+}
+
+.content2 > a >  img{
+    padding-left: 0.5em;
+    width: 64px;
+}
+
+
+/* MAQUETACIÓN PARA PANTALLAS DE MENOS DE 900px */
+@media screen and (max-width: 900px) {
+#menu{
+    font-size: 0.65em; 
+}
+.container3 > h2{
+    font-size: 1.25em;
+}
+    
+/* MAQUETACIÓN PARA PANTALLAS DE MENOS DE 700px */
+@media screen and (max-width: 700px) {
+    #menu > .mainMenu{
+        margin-left: 0;
+        padding-left:0;
+    }
+    #menu > ul > li{
+    padding: 0.5em 0.75em;
+    }
+    .container3 > h2{
+    font-size: 1em;
+}
+
+}
+
+
+/* MAQUETACIÓN PARA PANTALLAS DE MENOS DE 700px */
+
+@media screen and (max-width: 769px) {
+        #menu .mainMenu {
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: top 1s ease;
+        display: none;
+        background: rgb(219,153,66);
+        font-size: 1.5em;
+    }
+    #menu > ul > li > a {
+    color: rgb(22,13,9);
+    font-size: 1em;
+    }
+    #menu > ul > li:hover{
+        background-color: rgb(22,13,9);
+    }
+    #menu > ul > li > a:hover {
+        color:  rgb(219,153,66);
+    }
+    #menu .mainMenu .closeMenu {
+        display:block;
+        position: absolute;
+    }
+    
+    #menu .openMenu {
+        margin: 0em 1em;
+        width: 85%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color:rgb(238,238,238);
+        font-size:2em;
+    }
+    #menu .closeMenu{
+        top:3em;
+        font-size: 2em;
+    }
+    
+    
+        #MythTales > h1{
+        width: 100%;
+    }
+
+    #descubre > .logoMT{
+        padding: 10em 0;
+        height: 15em;
+        width: auto;
+    }
+    #descubre > .NavArrow > a{
+        padding-top: 0;
+        width: auto;
+        height: 1.5em;
+    }
+
+    #MythTales > div {
+        display:block;
+        margin:auto;
+    }
+    #MythTales >div> .text{
+    margin-top: 1em;
+    width: 100%;
+    }
+    
+    #MythTales > div > div > p{
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+    
+    #MythTales >div > .img{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:  1em;
+    }
+    
+#historia{
+    width: 100%;
+    padding:5em 0;
+    background-color: rgb(22,13,9);
+    }
+#historia > h1{
+    width: 100%;
+}
+
+#historia > div{
+    display: block;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#historia > div > .text{
+    margin-top: 1em;
+    width: 100%;
+}
+#historia > div> .img{
+    
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:  1em;
+}
+    
+#historia > div > div > p{
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+
+
+/*Personajes*/
+#personajes {
+    width: 100%;
+    padding:5em 0;
+    background-color: rgb(22,13,9);
+}
+
+#personajes > h1{
+      width: 100%;
+}
+#personajes > div{
+    display: block;
+    width: 100%;
+}
+#personajes > div > .text{
+    margin-top: 1em;
+    width: 100%;
+}
+#personajes > div > .img{
+     width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:  1em;
+}
+    
+#personajes > div > div > p{
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+    
+    
+#contacto > div > h1{
+    width: 100%;
+    padding-bottom: 1em;
+}
+#contacto > div > div{
+    display:block;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding:0.25em;
+}
+.form-control{
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgb(238,238,238);
+    background-color: rgb(238,238,238);
+    background-clip: padding-box;
+    border: 0.125rem solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.5rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.row{
+    width: 100%;
+}
+.container2{
+    width: 100%;
+}
+#jugar > a{
+    padding:0.5em;
+    font-size: 1.5em;
+
+}
+
+
+footer > figure{
+     margin: 0.25em;
+}
+
+footer > .content1{
+    display:none;
+}
+.content2 {
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+    @media screen and (max-width: 500px){
+        p {
+            font-size: 0.85em;
+            
+        }
+        
+        #MythTales > div > div{
+            padding-left: 8px;
+            padding-right: 8px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            margin: 0;
+        }
+    }
+}
